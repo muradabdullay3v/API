@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.weather_information {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.weather_information .weather_information-image {
+  width: 40px;
+  -webkit-animation: sun 200s infinite both linear;
+          animation: sun 200s infinite both linear;
+}
+
+.weather_information .weather_information-image img {
+  width: 100%;
+}
+
+.weather_app {
+  max-width: 400px;
+  border-radius: 25px;
+  height: 550px;
+  margin: 50px auto;
+  background: linear-gradient(-45deg, #002ef7, #009af6, #00d4ff);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+.weather_app .weather-card {
+  padding: 35px;
+}
+
+.weather_app h1 {
+  color: #fff;
+}
+
+.weather_app h2 {
+  color: #dddddd;
+  font-size: 30px;
+}
+
+.weather_app h3 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.weather_app .city, .weather_app .temperature {
+  color: #000;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.wind .fa-wind {
+  color: #98BECC;
+  -webkit-animation: wind 5s infinite forwards alternate;
+          animation: wind 5s infinite forwards alternate;
+}
+
+@-webkit-keyframes wind {
+  0% {
+    -webkit-transform: rotate(0deg) translate(0);
+            transform: rotate(0deg) translate(0);
+  }
+  25% {
+    -webkit-transform: rotate(5deg) translate(50%);
+            transform: rotate(5deg) translate(50%);
+  }
+  50% {
+    -webkit-transform: rotate(0deg) translate(20%);
+            transform: rotate(0deg) translate(20%);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg) translate(50%);
+            transform: rotate(-5deg) translate(50%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0);
+            transform: rotate(0) translate(0);
+  }
+}
+
+@keyframes wind {
+  0% {
+    -webkit-transform: rotate(0deg) translate(0);
+            transform: rotate(0deg) translate(0);
+  }
+  25% {
+    -webkit-transform: rotate(5deg) translate(50%);
+            transform: rotate(5deg) translate(50%);
+  }
+  50% {
+    -webkit-transform: rotate(0deg) translate(20%);
+            transform: rotate(0deg) translate(20%);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg) translate(50%);
+            transform: rotate(-5deg) translate(50%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0);
+            transform: rotate(0) translate(0);
+  }
+}
+
+@-webkit-keyframes sun {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(10000deg);
+            transform: rotate(10000deg);
+  }
+}
+
+@keyframes sun {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(10000deg);
+            transform: rotate(10000deg);
+  }
+}
+
+.fa-water {
+  color: #86b0c7;
+  -webkit-animation: water 4s infinite forwards;
+          animation: water 4s infinite forwards;
+}
+
+@-webkit-keyframes water {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes water {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+::-moz-selection {
+  background: pink;
+}
+
+::selection {
+  background: pink;
+}
+/*# sourceMappingURL=main.css.map */
